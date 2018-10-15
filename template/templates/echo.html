@@ -1,0 +1,9 @@
+{%  for name, value in params.items %}
+    {{ method }}
+    {{ name }}: {{ value }}
+{% endfor %}
+{% if statement %}
+    statement is {{ statement }}
+{% else %}
+    statement is empty
+{% endif %}
